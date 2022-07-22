@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date </title>
+    <script>
+const currentDate= ()=>{
+    const array=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    const dates= new Date();
+let day=array[dates.getDay()];
+console.log(day);
+return day;
+}
+currentDate();
+document.addEventListener('DOMContentLoaded',()=>{
+    document.querySelector('.dates').innerHTML=currentDate();
+});
+    </script>
+</head>
+<body>
+<p class="dates">Sunday</p>
+
+</body>
+</html>
